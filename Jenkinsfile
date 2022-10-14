@@ -16,6 +16,7 @@ pipeline {
                         script {
                             sh 'mvn test '
                         }
+                        emailext  body: '', subject: '', to: 'kmilocbc02@gmail.com'
                     }
                 }
 
@@ -23,7 +24,7 @@ pipeline {
     post {
         always {
             echo 'Building finished successfully'
-                emailext  body: '', subject: '', to: 'kmilocbc02@gmail.com'
+                
         }
     }
 }
