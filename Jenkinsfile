@@ -23,7 +23,7 @@ pipeline {
     post {
         always {
             echo 'Building finished successfully'
-                emailext  body: '', subject: '', to: 'cristiankmilo.cbc@gmail.com'
+                emailext  body: '', subject: '', to: 'kmilocbc02@gmail.com'
         }
     }
 }
