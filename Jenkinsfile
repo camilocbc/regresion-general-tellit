@@ -16,7 +16,7 @@ pipeline {
                         script {
                             sh 'mvn test '
                         }
-                        emailext attachLog: true, attachmentsPattern: '**/phoneNumbers.csv', body: 'holas test', subject: 'TEST', to: 'kmilocbc02@gmail.com'
+                        emailext attachLog: true, attachmentsPattern: '**/phoneNumbers.csv', body: 'holas test', subject: 'TEST', to: 'cristian.buitrago@aldeamo.com, linda.marquez@aldeamo.com'
                     }
                 }
 
